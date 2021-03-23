@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:backgroundTint="#E4E4E4"
+    tools:context=".main.profile.ProfileActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="577dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="92dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="26dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="577dp">
+
+                <TextView
+                    android:id="@+id/tvprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Andrea Rahmadanisya"
+                    android:textColor="#416188"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:foregroundGravity="center_horizontal"
+                    android:src="@drawable/ic_edit_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.224"
+                    app:layout_constraintStart_toEndOf="@+id/tvprofile"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:layout_marginHorizontal="14dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#E4E4E4"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+                    tools:layout_editor_absoluteX="14dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#08416188">
+
+                        <ImageView
+                            android:id="@+id/ivProfileLevel"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/ic_profile_level"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@id/ivProfileSaldo"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivProfileSaldo"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_profile_saldo"
+                            app:layout_constraintLeft_toRightOf="@id/ivProfileLevel"
+                            app:layout_constraintRight_toLeftOf="@id/ivProfileTotal"
+                            app:layout_constraintTop_toTopOf="@id/ivProfileLevel" />
+
+                        <ImageView
+                            android:id="@+id/ivProfileTotal"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_profile_total"
+                            app:layout_constraintLeft_toRightOf="@id/ivProfileSaldo"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/ivProfileLevel" />
+
+                        <!--                        Baris 2 -->
+                        <TextView
+                            android:id="@+id/tvProfileLevelLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Level"
+                            android:textColor="#66000000"
+                            android:textSize="12sp"
+                            app:layout_constraintLeft_toLeftOf="@id/ivProfileLevel"
+                            app:layout_constraintRight_toRightOf="@id/ivProfileLevel"
+                            app:layout_constraintTop_toBottomOf="@id/ivProfileLevel" />
+
+
+                        <!--                        Baris 3 -->
+                        <TextView
+                            android:id="@+id/tvProfileLevelValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Trashure Sejati"
+                            android:textColor="#416188"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/tvProfileLevelLabel"
+                            app:layout_constraintRight_toRightOf="@id/tvProfileLevelLabel"
+                            app:layout_constraintTop_toBottomOf="@id/tvProfileLevelLabel" />
+
+                        <TextView
+                            android:id="@+id/tvProfileSaldoLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Saldo"
+                            android:textColor="#66000000"
+                            android:textSize="12sp"
+                            app:layout_constraintLeft_toLeftOf="@id/ivProfileSaldo"
+                            app:layout_constraintRight_toRightOf="@id/ivProfileSaldo"
+                            app:layout_constraintTop_toBottomOf="@id/ivProfileSaldo" />
+
+
+                        <!--                        Baris 3 -->
+                        <TextView
+                            android:id="@+id/tvProfileSaldoValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Rp. 150.000"
+                            android:textColor="#416188"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/tvProfileSaldoLabel"
+                            app:layout_constraintRight_toRightOf="@id/tvProfileSaldoLabel"
+                            app:layout_constraintTop_toBottomOf="@id/tvProfileSaldoLabel" />
+
+                        <TextView
+                            android:id="@+id/tvProfileTotalLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Total"
+                            android:textColor="#66000000"
+                            android:textSize="12sp"
+                            app:layout_constraintLeft_toLeftOf="@id/ivProfileTotal"
+                            app:layout_constraintRight_toRightOf="@id/ivProfileTotal"
+                            app:layout_constraintTop_toBottomOf="@id/ivProfileTotal" />
+
+
+                        <!--                        Baris 3 -->
+                        <TextView
+                            android:id="@+id/tvProfileTotalValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="24kg"
+                            android:textColor="#416188"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.509"
+                            app:layout_constraintLeft_toLeftOf="@id/tvProfileTotalLabel"
+                            app:layout_constraintRight_toRightOf="@id/tvProfileTotalLabel"
+                            app:layout_constraintTop_toBottomOf="@id/tvProfileTotalLabel"
+                            app:layout_constraintVertical_bias="0.555" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvProfileNomorHp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Nomor Hp"
+                    android:textColor="#57000000"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardViewProfile" />
+
+                <TextView
+                    android:id="@+id/tvProfileNomorValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:text="082219738620"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@id/tvProfileNomorHp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfileNomorHp" />
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="29dp"
+                    android:text="Email"
+                    android:textColor="#57000000"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfileNomorValue" />
+
+                <TextView
+                    android:id="@+id/tvProfileEmailValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:text="rahmadanisya.andrea@gmail.com"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfileEmail" />
+
+                <TextView
+                    android:id="@+id/tvProfileTl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="29dp"
+                    android:text="Tanggal Lahir"
+                    android:textColor="#57000000"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfileEmailValue" />
+
+                <TextView
+                    android:id="@+id/tvProfileTlValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:text="11-Desember-2000"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfileTl" />
+
+                <Button
+                    android:layout_width="313dp"
+                    android:layout_height="56dp"
+                    android:layout_marginHorizontal="33dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bgbtnpenukaran"
+                    android:text="Keluar"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfileTlValue" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/img_profile"
+        app:civ_border_color="#fff"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".main.profile.ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Edit Akun"
+                android:textColor="#416188"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/img_profile"
+            app:civ_border_color="#fff"
+            app:civ_border_width="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="69dp"
+            android:text="Edit Gambar"
+            android:textColor="#416188"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.824"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="347dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+        <TextView
+            android:id="@+id/tvProfileNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Nama"
+            android:textColor="#57000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewline" />
+
+        <TextView
+            android:id="@+id/tvProfileNamaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Andrea Rahmadanisya"
+            android:textColor="#DE000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileNama" />
+
+        <View
+            android:id="@+id/viewline2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileNamaValue" />
+
+        <TextView
+            android:id="@+id/tvProfileNomorHp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Nomor Hp"
+            android:textColor="#57000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewline2" />
+
+        <TextView
+            android:id="@+id/tvProfileNomorValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="082219738620"
+            android:textColor="#DE000000"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/tvProfileNomorHp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileNomorHp" />
+
+        <View
+            android:id="@+id/viewline3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileNomorValue" />
+
+        <TextView
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textColor="#57000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewline3" />
+
+        <TextView
+            android:id="@+id/tvProfileEmailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="rahmadanisya.andrea@gmail.com"
+            android:textColor="#DE000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileEmail" />
+
+        <View
+            android:id="@+id/viewline4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileEmailValue" />
+
+        <TextView
+            android:id="@+id/tvProfileTl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:text="Tanggal Lahir"
+            android:textColor="#57000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileEmailValue" />
+
+        <TextView
+            android:id="@+id/tvProfileTlValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="11-Desember-2000"
+            android:textColor="#DE000000"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileTl" />
+
+        <View
+            android:id="@+id/viewline5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileTlValue" />
+
+        <Button
+            android:layout_width="313dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="33dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bgbtnpenukaran"
+            android:text="Simpan"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileTlValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

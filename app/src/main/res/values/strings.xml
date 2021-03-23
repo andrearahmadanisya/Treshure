@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Trashure</string>
+    <string name="tips_sampah">Cara memilah sampah yang baik, hal yang pertama harus kamu lakuin adalah dengan cara mengetahui jenis-jenis sampah tersebut, mulai dari sampah kering, sampah basah. Sampah kering biasa nya terdiri dari sampah botol-botolan, kaleng-kalengan bekas minuman biasanya, sampah basah bisanya bekas sisa-sisa makanan. /n
+        Untuk memilahnya, kami sarankan untuk mengelompokkannya menjadi dua kelompok, yang pertama sampah kering yang kedua sampah basah, disarankan untuk menyetor sampah kering saja, agar mudah ditimbang dan dihitung beratnya.
+        Jika anda mempunyai kardus, saran kami untuk memilah sampah kering tersebut menjadi beberapa kategori lagi, yang pertama sampah botol, yang kedua sampah kaleng dan yang terakhir adalah sampah kardus. Setelah itu masukkan sampah yang kalian pungut kedalam kardus-kardus yang sudah disediakan berdasarkan kategori yang sudah dibuat.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cara_memilah_sampah_yang_baik">Cara Memilah Sampah yang Baik</string>
+</resources>

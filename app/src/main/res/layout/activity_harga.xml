@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+    tools:context=".main.harga.HargaActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_harga_plastik" />
+
+        <TextView
+            android:id="@+id/hargaplastik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Sampah Plastik "
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_harga_kaleng" />
+
+        <TextView
+            android:id="@+id/hargakaleng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Sampah Kaleng "
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_harga_kardus" />
+
+        <TextView
+            android:id="@+id/hargakardus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Sampah Kardus"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

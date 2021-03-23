@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:id="@+id/registname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/form"
+            android:drawableLeft="@drawable/user"
+            android:hint="  Nama"
+            android:inputType="text"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/registemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/form"
+            android:drawableLeft="@drawable/icons_communication"
+            android:hint="  Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/registnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/form"
+            android:drawableLeft="@drawable/call"
+            android:hint="  Nomor HP"
+            android:inputType="phone"
+            android:paddingLeft="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/registpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form"
+                android:drawableStart="@drawable/pass"
+                android:drawablePadding="4dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="4dp"
+            />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnregist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/bgbtnlogin"
+            android:text="Daftar"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atau masuk dengan" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bgbtnlogin"
+                android:src="@drawable/gmail" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bgbtnlogin"
+
+                android:src="@drawable/fb" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun Trashure?"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

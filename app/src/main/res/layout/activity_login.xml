@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/logo_ts" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/form"
+            android:drawableLeft="@drawable/icons_communication"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="8dp"
+            android:paddingLeft="8dp"/>
+<!--            android:backgroundTint="@android:color/transparent"/>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="20dp"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false">
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/pass"
+                android:drawablePadding="8dp"
+                android:paddingLeft="5dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Remember me"
+                android:textColor="#EE878383" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="LUPA PASSWORD?"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bgbtnlogin"
+            android:text="Sign In"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atau masuk dengan"
+                android:textColor="#C4C4C4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bgbtnlogin"
+                android:src="@drawable/gmail" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bgbtnlogin"
+                android:src="@drawable/fb" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun Trashure?" />
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="DAFTAR"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menuHome"
+        android:title="Beranda"
+        android:icon="@drawable/ic_baseline_home"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/homepenukaran"
+        android:title="Penukaran"
+        android:icon="@drawable/ic_home_penukaran"
+        app:showAsAction="withText" />
+
+    <item android:id="@+id/homescan"
+        android:title="Scan"
+        android:icon="@drawable/ic_home_scan"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/homeharga"
+        android:title="Harga"
+        android:icon="@drawable/ic_home_harga"
+        app:showAsAction="withText" />
+
+    <item android:id="@+id/homeakun"
+        android:title="akun"
+        android:icon="@drawable/ic_home_akun"
+        app:showAsAction="ifRoom"/>
+
+</menu>

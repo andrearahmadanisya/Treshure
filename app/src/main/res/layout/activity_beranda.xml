@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.beranda.BerandaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <!--    Bagian 1 : Summary-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            app:cardCornerRadius="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8BC34A">
+
+                <TextView
+                    android:id="@+id/tvBerandaSummaryDompet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#689F38"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    android:text="Dompet"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBerandaSummarySaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#689F38"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    android:text="RP. 150.000"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/vBerandaSummary"
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:layout_marginVertical="8dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.456"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvBerandaSummaryDompet"
+                    app:layout_constraintVertical_bias="0.058" />
+
+                <TextView
+                    android:id="@+id/tvBerandaSummaryLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level :"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/vBerandaSummary"
+                    app:layout_constraintHorizontal_bias="0.193"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="@id/vBerandaSummary"
+                    app:layout_constraintTop_toTopOf="@id/vBerandaSummary"
+                    app:layout_constraintVertical_bias="0.512" />
+
+                <TextView
+                    android:id="@+id/tvBerandaSummaryLevel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:text="Trashure sejati"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/vBerandaSummary"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toRightOf="@id/tvBerandaSummaryLevel"
+                    app:layout_constraintRight_toRightOf="@id/vBerandaSummary"
+                    app:layout_constraintTop_toTopOf="@id/vBerandaSummary" />
+
+                <TextView
+                    android:id="@+id/tvBerandaTrashbag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Tashbag :"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/vBerandaSummary"
+                    app:layout_constraintLeft_toLeftOf="@id/vBerandaSummary"
+                    app:layout_constraintTop_toTopOf="@id/vBerandaSummary"
+                    app:layout_constraintVertical_bias="0.512" />
+
+                <TextView
+                    android:id="@+id/tvBerandaTrashbagvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:text="Tidak Terhubung"
+                    android:textColor="#DADADA"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/vBerandaSummary"
+                    app:layout_constraintLeft_toRightOf="@id/tvBerandaTrashbag"
+                    app:layout_constraintTop_toTopOf="@id/vBerandaSummary"
+                    app:layout_constraintVertical_bias="0.512" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="336dp">
+
+            <TextView
+                android:id="@+id/tvsampahterkumpul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Sampah Terkumpul"
+                android:textColor="#416188"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="59dp"/>
+            <!--            <ImageView-->
+            <!--                android:id="@+id/chart"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginStart="14dp"-->
+            <!--                android:layout_marginTop="59dp"-->
+            <!--                android:src="@drawable/img_chartsampah" />-->
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Setoran"
+            android:textColor="#416188"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Lihat Semua"
+            android:textColor="#D6718093"
+            android:textSize="14dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Tips"
+                android:textColor="#416188"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivSubItemBannerList"
+                android:layout_width="wrap_content"
+                android:layout_height="156dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_tips1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tvSubItemBannerListTitle"
+                android:layout_width="144dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:text="Cara Memilah Sampah yang Baik"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.817" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

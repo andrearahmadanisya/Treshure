@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.setting.PengaturanFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:elevation="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarpengaturan"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title=" ">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvToolbarTitlepenukaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaturan"
+                    android:textColor="#416188"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivBahasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="26dp"
+                    android:src="@drawable/ic_pengaturan_gantibahasa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBahasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="26dp"
+                    android:text="Ganti Bahasa"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivBahasa"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/vLine"
+                    android:layout_width="326dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBahasa" />
+
+                <ImageView
+                    android:id="@+id/ivNotif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/ic_notif_black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivBahasa" />
+
+                <TextView
+                    android:id="@+id/tvNotifikasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Notifikasi"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivNotif"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="279dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivBantuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_help"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBantuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Bantuan"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivBantuan"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/vLine2"
+                    android:layout_width="326dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBantuan" />
+
+                <ImageView
+                    android:id="@+id/ivPrivasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@drawable/ic_privacy"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine2" />
+
+                <TextView
+                    android:id="@+id/tvPrivasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Kebijakan Privasi"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivPrivasi"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine2" />
+
+                <View
+                    android:id="@+id/vLine3"
+                    android:layout_width="326dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPrivasi" />
+
+                <ImageView
+                    android:id="@+id/ivLayanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@drawable/ic_ketentuan_layanan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine3" />
+
+                <TextView
+                    android:id="@+id/tvLayanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Ketentuan Layanan"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivLayanan"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine3" />
+
+                <View
+                    android:id="@+id/vLine4"
+                    android:layout_width="326dp"
+                    android:layout_height="3dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLayanan" />
+
+                <ImageView
+                    android:id="@+id/ivNilai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@drawable/ic_nilai"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine4" />
+
+                <TextView
+                    android:id="@+id/tvNilai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Beri Kami Nilai"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivLayanan"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

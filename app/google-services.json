@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "312113610950",
+    "firebase_url": "https://trashure-motionlab.firebaseio.com",
+    "project_id": "trashure-motionlab",
+    "storage_bucket": "trashure-motionlab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312113610950:android:93b4f15724a066f6e9d7c7",
+        "android_client_info": {
+          "package_name": "android.studio.treshure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312113610950-b8fhatemkl054lms839tcos2ei5et9n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx5IZfU1llG_qBi1tPKVJj6XsZmygyKZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312113610950-b8fhatemkl054lms839tcos2ei5et9n2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
